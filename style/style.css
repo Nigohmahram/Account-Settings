@@ -1,0 +1,173 @@
+/* FONTS  */
+@font-face {
+     font-family: 'Roboto';
+     src: url('../fonts/') format('woff2'),
+         url('../fonts/Roboto-Bold.woff') format('woff');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'Roboto';
+     src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+         url('../fonts/Roboto-Medium.woff') format('woff');
+     font-weight: 500;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'Roboto';
+     src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+         url('../fonts/Roboto-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+ }
+/* GLOBALL */
+
+html{
+     height: 100%;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after{
+     box-sizing:border-box;
+}
+
+body{
+     display: flex;
+     height: 100%;
+     padding: 0;
+     margin: 0;
+     flex-direction: column;
+     background-color: #fdec50;
+     color: #222;
+     font-family: "Arial" sans-serif;
+     font-size: 16px;
+     line-height: 1.5;
+}
+
+img{
+     max-width: 100%;
+     height: auto;
+}
+
+/* CONTAINER  */
+
+.container{
+     width: 100%;
+     max-width: 600px;
+     padding-left: 50px;
+     padding-right: 50px;
+     margin-left: auto;
+     margin-right: auto;
+}
+.main-content{
+     flex-grow: 1;
+     padding: 30px 0;
+}
+.profile-settings {
+     max-width: 600px;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: gold;
+     box-shadow: 0 10px 15px -3 rgba(0, 0, 0, 0.2);
+     border-radius: 10px;
+}
+
+.profile-settings-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 40px;
+}
+.profile-settings-title {
+     margin: 0;
+     font-size: 20px;
+     font-family: "Roboto", "Arial", sans-serif;
+     font-weight: bold;
+}
+.profile-settings-close-link {
+     display: flex;
+}
+
+.profile-settings-form-body {
+     position: relative;
+     padding: 50px 30px 40px;
+     left: 40px;
+     background-color: #fff;
+     box-shadow: 0 10px 15px -3px  rgba(0, 0, 0, 0.2);
+     border-radius: 2px;
+}
+.profile-settings-avatar{
+     position: absolute;
+     top: 0;
+     transform: translateY(-50%);
+     width: 60px;
+     height: 60px;
+     object-fit: cover;
+     border-radius: 50%;
+}
+.profile-settings-form-group {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+}
+.profile-settings-form-group:not(:last-child){
+     margin-bottom: 20px;
+}
+.profile-settings-form-label {
+     margin-bottom: 5px;
+     text-transform: uppercase;
+     color: #cdcdcd;
+     font-family: "Roboto", "Arial", sans-serif;
+     font-weight: 500;
+}
+.profile-settings-form-field {
+     display: block;
+     width: 100%;
+     padding: 8px 0 ;
+     border: 0;
+     border-bottom: 2px solid #eadcdc;
+     font-size: 14px;
+     font-family: "Roboto", "Arial", sans-serif;
+     font-weight: 500;
+     color: #575753;
+}
+.profile-settings-form-row{
+     display: flex;
+}
+.profile-settings-form-row:not(:last-child){
+     margin-bottom: 20px;
+}
+.profile-settings-form-row .profile-settings-form-group{
+     width: 50%;
+     margin-bottom: 0;
+}
+.profile-settings-form-field-textaria {
+     min-height: 70px;
+     resize: vertical;
+}
+.profile-settings-form-actions {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 40px 40px 30px 40px;
+}
+.profile-setting-form-action {
+     padding: 0;
+     border: 0;
+     background-color: transparent;
+     font-size: 18px;
+     font-weight: bold;
+     color: #786a0c;
+     cursor: pointer;
+}
+.profile-setting-form-action:not(:last-child){
+     margin-right: 40px;
+}
